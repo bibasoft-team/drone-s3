@@ -1,0 +1,1 @@
+ drone exec --trusted  --secret-file=secrets.txt  --env-file .env.drone example.yml

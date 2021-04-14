@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM bibasoft/node-aws
 
 WORKDIR /bin/drone-s3
 COPY package*.json ./

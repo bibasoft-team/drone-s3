@@ -1,0 +1,22 @@
+---
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: test
+    image: bibasoft/node-aws
+    settings:
+      bucket: secure-t-frontend-develop
+      access_key:
+        from_secret: aws_access_key_id
+      secret_key:
+        from_secret: aws_secret_access_key
+      endpoint:
+        from_secret: aws_endpoint
+      source: ./build
+      target: /${DRONE_REPO_NAME}/tree/{{branch_escape}}/
+      delete: true
+      region: ru-central1
+    commands:
+      - node .

@@ -2,10 +2,15 @@
   "name": "drone-s3",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "shelljs.exec": "^1.1.8",
+    "url-join": "^4.0.1"
+  }
 }

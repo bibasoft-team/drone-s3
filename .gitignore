@@ -2,3 +2,4 @@ node_modules
 dist
 coverage
 id_rsa
+secrets.txt
